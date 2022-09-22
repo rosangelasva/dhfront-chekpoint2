@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #0C1C2F;
+    padding:15px 0;
+}
+header .titulo{
+    line-height: 15px;
+}
+header .titulo .logo-tit{
+    color:#0F79AF ;
+}
+header .titulo .logo-sub{
+font-size: 15px;
+}
+nav ul{
+   display: flex;
+   gap: 30px;
+   list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+header .borda{
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+header .borda img{
+    width: 30px;
+}
+main{
+    display:flex;
+    background-color: #0D0E0F;
+    min-height: 100vh;
+}
+main .formulario{
+    padding: 40px 70px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+main .formulario h1{
+    font-family: 'Play', sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+main .formulario .informacao{
+    margin-bottom: 40px;
+}
+main .formulario .opcao{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main .formulario button{
+    background-color: #0F79AF;
+    height:50px ;
+    width:341px;
+    color: white;
+   border-radius: 5px;
+   transition: all 0.5s;
+   cursor: pointer;
+}
+main .formulario .links{
+    text-decoration: none;
+    color: white;
+}
+main .formulario button:hover{
+    background-color: #0c5c84;
+}
+main .fotos{
+    display: flex;
+    flex-direction: column;
+}
+main .fotos div{
+    display: flex;
+   justify-content: space-between;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0C1C2F;
+    padding: 15px 0;
+    height: 100px;
+}
+.social .social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 25px;
+}
+.social .social-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social .social-container div a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.social .final {
+    text-align: center;
+    font-size: 11px;
+}
+
+/*** css da pagina de login ***/
+.banner{
+   background-image: url(./imagens/home.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.banner h1{
+    color:   white;
+    font-size: 40px;
+}
+.banner p{
+    color: white;
+    font-size: 20px;
+}
+main .formulario .dados{
+    height:50px ;
+    width:332px;
+    border: none;
+    text-align: center;
+    background-color:  #0D0E0F;
+    border-bottom: 1px solid rgba(15, 121, 175, 0.5);
+    margin-bottom: 15px;
+    color: white;
+}
+main .formulario .dados::placeholder{
+    color: #0F79AF;
+}
+main .formulario .link{
+    margin: 15px;
+    color: #0F79AF;
+    text-decoration: none;
+}
+/*** css da pagina de filmes ***/
+#filmes-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#filmes-container h2{
+    color: #0D0E0F;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#filmes-container .dados{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+#filmes-container .dados div{
+    transition: 0.5s all;
+    cursor: pointer;
+}
+#filmes-container .dados div:hover{
+    transform: scale(1.2);
+}
+#filmes-container .dados div img{
+    height: 250px;
+}
+
