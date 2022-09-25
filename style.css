@@ -45,15 +45,22 @@ header .borda img{
 }
 main{
     display:flex;
+    justify-content: center;
     background-color: #0D0E0F;
     min-height: 100vh;
+    background-image: url(./imagens/home.png);
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }
 main .formulario{
-    padding: 40px 70px;
+    padding: 100px 70px;
     display: flex;
+    width: 50%;
     flex-direction: column;
-   align-items: center;
-   text-align: center;
+    align-items: center;
+    text-align: center;
+
 }
 main .formulario h1{
     font-family: 'Play', sans-serif;
@@ -82,14 +89,6 @@ main .formulario .links{
 }
 main .formulario button:hover{
     background-color: #0c5c84;
-}
-main .fotos{
-    display: flex;
-    flex-direction: column;
-}
-main .fotos div{
-    display: flex;
-   justify-content: space-between;
 }
 .social{
     display: flex;
@@ -174,6 +173,7 @@ main .formulario .link{
     display: flex;
     justify-content: space-around;
     gap: 10px;
+    flex-wrap: wrap;
 }
 #filmes-container .dados div{
     transition: 0.5s all;
@@ -185,4 +185,27 @@ main .formulario .link{
 #filmes-container .dados div img{
     height: 250px;
 }
-
+@media (max-width: 768px){
+    .banner{
+        background-size: cover;
+    }
+    .banner h1{
+        text-align: center;
+    }
+    .nu-01{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nu-01 nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  @media (max-width:768px){
+    #filmes-container .dados{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
